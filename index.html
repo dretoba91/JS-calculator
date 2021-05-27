@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Press Caps lock. A: +; S: -; M: *; D: /; B: <--; C: clear; P: .; E: =
+    </h2>
+    <section id="calculator">
+      <form>
+        <input type="text" id="display" /><br />
+        <input type="button" id="keys" value="C" onclick="addtoscreen('C')" />
+        <input type="button" id="keys" value="&larr;" onclick="backspace()" />
+        <input type="button" id="keys" value="X&sup3;" onclick="power(3)" />
+        <input type="button" id="keys" value="&radic;" onclick="power(0.5)" />
+        <br />
+
+        <input type="button" id="keys" value="9" onclick="addtoscreen('9')" />
+        <input type="button" id="keys" value="8" onclick="addtoscreen('8')" />
+        <input type="button" id="keys" value="7" onclick="addtoscreen('7')" />
+        <input
+          type="button"
+          id="keys"
+          class="operator"
+          value="+"
+          onclick="addtoscreen('+')"
+        />
+        <br />
+
+        <input type="button" id="keys" value="6" onclick="addtoscreen('6')" />
+        <input type="button" id="keys" value="5" onclick="addtoscreen('5')" />
+        <input type="button" id="keys" value="4" onclick="addtoscreen('4')" />
+        <input
+          type="button"
+          id="keys"
+          class="operator"
+          value="-"
+          onclick="addtoscreen('-')"
+        />
+        <br />
+
+        <input type="button" id="keys" value="3" onclick="addtoscreen('3')" />
+        <input type="button" id="keys" value="2" onclick="addtoscreen('2')" />
+        <input type="button" id="keys" value="1" onclick="addtoscreen('1')" />
+        <input
+          type="button"
+          id="keys"
+          class="operator"
+          value="*"
+          onclick="addtoscreen('*')"
+        />
+        <br />
+
+        <input type="button" id="keys" value="." onclick="addtoscreen('.')" />
+        <input type="button" id="keys" value="0" onclick="addtoscreen('0')" />
+        <input
+          type="button"
+          id="keys"
+          class="operator"
+          value="="
+          onclick="answer()"
+        />
+        <input
+          type="button"
+          id="keys"
+          class="operator"
+          value="/"
+          onclick="addtoscreen('/')"
+        />
+      </form>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
